@@ -1,0 +1,21 @@
+
+.bigDaddy{ 
+width: 100%; 
+  height: 100%; 
+}
+
+.allContentContainer{
+padding-top:4%;
+text-align:center;
+width: 80%; 
+font-family: 'Gafata', sans-serif; 
+font-size:45px;
+margin:0 auto;
+}
+.generateIdInstructn{
+	 
+text-align:center;
+
+font-family: 'Gafata', sans-serif; 
+font-size:30px; 
+}
