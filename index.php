@@ -10,7 +10,7 @@
 <div class="bigDaddy">
 	<div class="allContentContainer">
 	HJC Depend<br><br>
-	<span class="generateIdInstructn">Before you begin please generate a Unique identifier for yourself. We would not keep any of your personal details, please use this identifier wherever asked during this research study.<br><form action="generateUniqueId.php" method="GET"><input type="submit" class="btn  btn-primary" value="Generate"> </input></form></span>
+	<span class="generateIdInstructn">Before you begin please obtain a Unique identifier for yourself. We would not keep any of your personal details, please use this identifier wherever asked during this research study.<br><form action="generateUniqueId.php" method="GET"><input type="submit" class="btn  btn-primary" value="Generate"> </input></form></span>
 	</div>
 </div>
 </BODY>
