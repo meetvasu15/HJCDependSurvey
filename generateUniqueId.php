@@ -26,8 +26,7 @@
 <div class="bigDaddy">
 	<div class="allContentContainer">
 	Your unique ID is<span style="color:red"> <?php echo generateIdentifier();?></span><br>
-	<span class="generateIdInstructn">Please write it on the two sheets that say "Bug Report (Coding Exercise _)" in heading.<br>
-	Also note it down somewhere as you will be identified by this ID for the next hour.</span><br><br>
+	<span class="generateIdInstructn">Please note it down somewhere and bring it with you for the coding exercise.<br> To keep your identity confidential we will identify you by this ID during the entire study.</span><br><br>
 	<span> <a href="https://docs.google.com/forms/d/1FeQ-rnHrZ1IPPogBO-LOSCBURcMtuO5Pi3XEW4UwoRg/viewform">Take Survey 1</a></span>
 	</div>
 </div>
