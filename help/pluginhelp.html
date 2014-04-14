@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="../mystyle.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
+<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+ <style>
+ table, table tr, table tr td{
+ border:1px solid black;
+ }
+ 
+ </style>
+</HEAD>
+<TITLE>HJC Depend</TITLE>
+<BODY>
+<div class="bigDaddy">
+	<div class="allContentContainerleft">
+	
+<h1 align = "center">Understanding HJC Depend Messages</h1><br><br>
+	<span class="generateIdInstructnleft">
+	<table style="text-align:left; width:100%; border:1px solid black;">
+	<tr>
+	<td>Sample error/warning Reported</td>
+	<td>Description</td>
+	</tr>
+	<tr>
+	<td>Please open the HTML file you want to analyze and then hit 'Run HJC Depend'.</td>
+	<td>To run the analysis on your code, we read the HTML file as a point of entry. Therefore, you need to open the html file in eclipse editor and while staying on it, hit 'Run HJCDepend'</td>
+	</tr>
+	<tr>
+	<td>Javascript tried to fetch  unavailable HTML reference 'someHTMLId'</td>
+	<td>In one of your JavaScript files, there was a reference to an id which is not present in the HTML file. <br>Eg document.getElementById('someHTMLId');</td>
+	</tr>
+	<tr>
+	<td>Access  to undefined  DOM element, HTML reference 'someHTMLId' unavailable.</td>
+	<td>In one of your JavaScript files, there was a reference to an id which is not present in the HTML file and then the code tried to write to that unavailable HTML element. <br>Eg: document.getElementById('someHTMLId').innerHTML = 'Something odd';</td>
+	</tr>
+	<tr>
+	<td>Access to an  undefined DOM element 'domElt', check initialization of this variable</td>
+	<td>This is similar to the one above, the difference is that JavaScript tries to write to an assigned variable<br>
+	Eg: var domElt = document.getElementById('someHTMLId'); <br>
+		domElt.innerHTML="content"; <br> 
+	</td>
+	</tr>
+	<tr>
+	<td>Could not find css class 'myCssClass' in any included CSS file.</td>
+	<td>This is a warning, HJC depend did not find any matching class applied to HTML in css files</td>
+	</tr>
+	<tr>
+	<td>Call to undefined function 'unavailableFunction'</td>
+	<td>HJC Depend could not find any function with name 'unavailableFunction' in all your JavaScript files.</td>
+	</tr>
+	<tr>
+	<td>Invalid argument count of function 'functionName' in HTML file</td>
+	<td>This is a warning, your HTML called a JavaScript function with invalid number of arguments.<br>
+	Eg: your HTML is: <\div onclick=\"someFunction('param1')\"\><br>
+	and your JS declares this function as someFunction('param1', 'param2')
+	
+	</td>
+	</tr>
+	 
+	</table>
+	</span>
+	   
+		 
+	</div>
+</div>
+<br><br><br><br><br><br><br>
+</BODY>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</BODY>
+</HTML>
